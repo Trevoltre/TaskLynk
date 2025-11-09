@@ -1,0 +1,192 @@
+/* Updated: 2025-11-09T13:16:45.712Z */
+/* Updated: 2025-11-08T20:12:43.689Z */
+/* Updated: 2025-11-08T20:11:21.757Z */
+/* Updated: 2025-11-08T19:01:21.542Z */
+/* Updated: 2025-11-08T18:08:25.735Z */
+/* Updated: 2025-11-08T18:05:51.866Z */
+/* Updated: 2025-11-08T17:36:33.111Z */
+/* Updated: 2025-11-08T17:18:18.715Z */
+/* Updated: 2025-11-08T15:59:38.344Z */
+/* Updated: 2025-11-08T14:48:51.871Z */
+/* Updated: 2025-11-08T14:17:36.394Z */
+/* Updated: 2025-11-08T13:43:40.011Z */
+/* Updated: 2025-11-08T13:10:18.251Z */
+/* Updated: 2025-11-08T13:10:05.346Z */
+/* Updated: 2025-11-08T10:35:22.896Z */
+/* Updated: 2025-11-08T04:31:53.695Z */
+/* Updated: 2025-11-08T03:23:21.613Z */
+/* Updated: 2025-11-08T02:43:56.126Z */
+/* Updated: 2025-11-08T00:41:52.857Z */
+/* Updated: 2025-11-07T09:58:20.476Z */
+/* Updated: 2025-11-07T08:44:07.925Z */
+/* Updated: 2025-11-06T23:37:01.823Z */
+/* Updated: 2025-11-06T23:07:41.455Z */
+/* Updated: 2025-11-06T22:51:52.217Z */
+/* Updated: 2025-11-06T22:04:03.820Z */
+/* Updated: 2025-11-06T22:01:15.789Z */
+/* Updated: 2025-11-06T21:04:55.535Z */
+/* Updated: 2025-11-06T20:27:03.378Z */
+/* Updated: 2025-11-06T19:47:34.614Z */
+/* Updated: 2025-11-06T18:20:19.189Z */
+/* Updated: 2025-11-06T17:56:50.761Z */
+/* Updated: 2025-11-06T08:23:11.145Z */
+/* Updated: 2025-10-29T21:51:14.675Z */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TaskLynk Brand Theme - Navy Blue (#1D3557) & Orange (#F2A541) */
+@layer base {
+  :root, .professional {
+    --radius: 0.75rem;
+    --background: oklch(0.99 0.005 240);
+    --foreground: oklch(0.15 0.02 240);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.15 0.02 240);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.15 0.02 240);
+    --primary: oklch(0.35 0.10 240);
+    --primary-foreground: oklch(0.99 0 0);
+    --secondary: oklch(0.72 0.18 50);
+    --secondary-foreground: oklch(0.1 0 0);
+    --muted: oklch(0.96 0.01 240);
+    --muted-foreground: oklch(0.52 0.02 240);
+    --accent: oklch(0.72 0.18 50);
+    --accent-foreground: oklch(0.1 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.92 0.01 240);
+    --input: oklch(0.92 0.01 240);
+    --ring: oklch(0.35 0.10 240);
+    --chart-1: oklch(0.35 0.10 240);
+    --chart-2: oklch(0.72 0.18 50);
+    --chart-3: oklch(0.52 0.12 240);
+    --chart-4: oklch(0.62 0.15 40);
+    --chart-5: oklch(0.28 0.08 240);
+    --sidebar: oklch(0.18 0.03 240);
+    --sidebar-foreground: oklch(0.98 0.01 240);
+    --sidebar-primary: oklch(0.45 0.12 240);
+    --sidebar-primary-foreground: oklch(0.99 0 0);
+    --sidebar-accent: oklch(0.24 0.03 240);
+    --sidebar-accent-foreground: oklch(0.98 0.01 240);
+    --sidebar-border: oklch(1 0 0 / 12%);
+    --sidebar-ring: oklch(0.45 0.12 240);
+
+    /* Mapping to Tailwind theme CSS variables (non-visual change) */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    /* Fallback for unspecified destructive foreground */
+    --color-destructive-foreground: var(--primary-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+  }
+
+  /* Dark Theme - Deep Navy & Amber */
+  .dark {
+    --background: oklch(0.12 0.03 240);
+    --foreground: oklch(0.98 0.01 240);
+    --card: oklch(0.18 0.03 240);
+    --card-foreground: oklch(0.98 0.01 240);
+    --popover: oklch(0.18 0.03 240);
+    --popover-foreground: oklch(0.98 0.01 240);
+    --primary: oklch(0.45 0.12 240);
+    --primary-foreground: oklch(0.99 0 0);
+    --secondary: oklch(0.75 0.20 55);
+    --secondary-foreground: oklch(0.12 0 0);
+    --muted: oklch(0.24 0.03 240);
+    --muted-foreground: oklch(0.65 0.02 240);
+    --accent: oklch(0.75 0.20 55);
+    --accent-foreground: oklch(0.12 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 12%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.45 0.12 240);
+    --chart-1: oklch(0.45 0.12 240);
+    --chart-2: oklch(0.75 0.20 55);
+    --chart-3: oklch(0.65 0.15 240);
+    --chart-4: oklch(0.70 0.18 45);
+    --chart-5: oklch(0.38 0.10 240);
+    --sidebar: oklch(0.18 0.03 240);
+    --sidebar-foreground: oklch(0.98 0.01 240);
+    --sidebar-primary: oklch(0.45 0.12 240);
+    --sidebar-primary-foreground: oklch(0.99 0 0);
+    --sidebar-accent: oklch(0.24 0.03 240);
+    --sidebar-accent-foreground: oklch(0.98 0.01 240);
+    --sidebar-border: oklch(1 0 0 / 12%);
+    --sidebar-ring: oklch(0.45 0.12 240);
+
+    /* Mapping to Tailwind theme CSS variables (non-visual change) */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    /* Fallback for unspecified destructive foreground */
+    --color-destructive-foreground: var(--primary-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
